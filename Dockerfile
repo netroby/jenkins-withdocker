@@ -8,7 +8,7 @@ RUN apt-get update && \
       ca-certificates \
       curl \
       gnupg2 \
-      software-properties-common && \
+      software-properties-common \
       && curl -o /usr/bin/docker-compose -L \
 		"https://github.com/docker/compose/releases/download/${COMPOSE_VERSION}/docker-compose-Linux-x86_64" \
 	&& chmod +x /usr/bin/docker-compose \
