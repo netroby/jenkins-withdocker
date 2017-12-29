@@ -1,5 +1,5 @@
 FROM jenkins/jenkins:lts
-MAINTAINER miiro@getintodevops.com
+MAINTAINER hufeng1987@gmail.com
 USER root
 
 # Install the latest Docker CE binaries
@@ -15,5 +15,5 @@ RUN apt-get update && \
       $(lsb_release -cs) \
       stable" && \
    apt-get update && \
-   apt-get -y install docker-ce
+   apt-get -y install docker-ce rsync ssh git
 
