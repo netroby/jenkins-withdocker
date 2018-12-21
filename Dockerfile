@@ -1,7 +1,7 @@
-FROM jenkins/jenkins:2.138
+FROM jenkins/jenkins:2.156
 MAINTAINER hufeng1987@gmail.com
 USER root
-ENV COMPOSE_VERSION 1.22.0
+ENV COMPOSE_VERSION 1.23.2
 # Install the latest Docker CE binaries
 RUN apt-get update && \
     apt-get -y install apt-transport-https \
